@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    flex-direction:column;
+    gap:30px;
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0072ff, #2e5f6d);
+    padding: 20px;
+    text-align:center;
+}
+
+/* Container for the Weather App */
+.weather-app {
+    
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+.weather-app h2 {
+    color: #0072ff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Search Form Styling */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.search-form input {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 2px solid #0072ff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-form input:focus {
+    border-color: #00c6ff;
+}
+
+.search-form button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0072ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #00c6ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weather-app {
+        padding: 20px;
+    }
+
+    .weather-app h2 {
+        font-size: 1.5rem;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-form input {
+        max-width: 100%;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+}
